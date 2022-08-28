@@ -503,7 +503,7 @@ def text2img2(opt: Options):
             torch.cuda.empty_cache()
             gc.collect()
         
-        put_watermark(final_output, wm_encoder)
+        #put_watermark(final_output, wm_encoder)
         final_output.save(os.path.join(sample_path, f"{base_filename}.png"))
 
 if __name__ == "__main__":
